@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "759126923098",
+    "firebase_url": "https://mai-ble-beacon-scanner-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mai-ble-beacon-scanner",
+    "storage_bucket": "mai-ble-beacon-scanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759126923098:android:0e27731eabe6e1fdf60563",
+        "android_client_info": {
+          "package_name": "com.katiekilroy.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759126923098-sh516hpb7vf5p3am82quemtt8go31cj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6DZBJoIUK5mahIR9IWmDljTEVElQK5bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759126923098-sh516hpb7vf5p3am82quemtt8go31cj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

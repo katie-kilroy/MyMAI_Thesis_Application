@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="calibration_fragment_label">Calibration Fragment</string>
+    <string name="scanning_fragment">Scanning Fragment</string>
+    <string name="update_beacon_fragment">Update Beacon Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="mac">MAC - %1$s</string>
+    <string name="rssi">RSSI: %1$d</string>
+    <string name="instance">Instance: %1$s</string>
+    <string name="namespace">Namespace: %1$s</string>
+    <string name="uuid">UUID: %1$s</string>
+    <string name="distance">Distance: %1$s</string>
+    <string name="major_minor">Major: %1$s Minor: %2$s</string>
+    <string name="title_activity_setup">SetupActivity</string>
+    <string name="calibration_text">To begin calibration please select if you want to add a new beacon or update an existing beacon:</string>
+    <string name="update_existing_beacon">Update existing beacon</string>
+    <string name="add_new_beacon">Add New Beacon</string>
+    <string name="change_the_beacon_values">Change the beacon values</string>
+    <string name="the_coordinates_of_the_first_beacon">The coordinates of the first beacon</string>
+    <string name="information_of_new_beacon">Please enter in the following information of the beacon you want to add</string>
+    <string name="please_enter_in_the_following_information_of_the_beacon_you_want_to_update">Please enter in the following information of the path you want to update</string>
+    <string name="floor_number">Floor Number:</string>
+    <string name="beacon_number">Beacon Number:</string>
+    <string name="floor_hint">Floor</string>
+    <string name="update_path">Update Path</string>
+    <string name="update_values_title">Enter in the new distance and direction</string>
+    <string name="select_direction">Select direction:</string>
+    <string name="distance_m">Distance (m):</string>
+    <string name="distance_input">Distance</string>
+    <string-array name="directions_array">
+        <item>Please Select Direction</item>
+        <item>Straight</item>
+        <item>Backward</item>
+        <item>Right</item>
+        <item>Left</item>
+    </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="settings_drawer">Settings</string>
+    <string name="second_beacon_coordinates">The coordinates of the second beacon</string>
+    <string name="add_beacon">Add Beacon</string>
+    <string name="description">Write a short navigational prompt:</string>
+    <string name="prompt">Prompt</string>
+    <string name="navigation">Navigation</string>
+    <string name="he_new_path_values">Enter in the new path values below</string>
+    <string name="first_beacon_number">First Beacon Number</string>
+    <string name="second_beacon_number">Second Beacon Number:</string>
+    <string name="congrats_destination">Congrats you have reached your destination!</string>
+
+</resources>

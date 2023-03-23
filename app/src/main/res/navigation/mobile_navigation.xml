@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.katiekilroy.myapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_navigation" />
+        <action
+            android:id="@+id/action_nav_home_to_ScanningFragment"
+            app:destination="@id/ScanningFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.katiekilroy.myapplication.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_calibrationFragment"
+            app:destination="@id/calibrationFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_UpdateFragment"
+            app:destination="@id/UpdateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_navigation"
+        android:name="com.katiekilroy.myapplication.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+<!--    <fragment-->
+<!--        android:id="@+id/Settings"-->
+<!--        android:name="com.katiekilroy.myapplication.ScanningFragment"-->
+<!--        android:label="setting_activity"-->
+<!--        tools:layout="@layout/fragment_scanning"/>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/CalibrationFragment"-->
+<!--        android:name="com.katiekilroy.myapplication.CalibrationFragment"-->
+<!--        android:label="@string/calibration_fragment_label"-->
+<!--        tools:layout="@layout/fragment_calibration"/>-->
+    <fragment
+        android:id="@+id/ScanningFragment"
+        android:name="com.katiekilroy.myapplication.ScanningFragment"
+        android:label="@string/scanning_fragment"
+        tools:layout="@layout/fragment_scanning"/>
+    <fragment
+        android:id="@+id/UpdateFragment"
+        android:name="com.katiekilroy.myapplication.UpdateBeaconFragment"
+        android:label="Update Path"
+        tools:layout="@layout/fragment_update">
+        <action
+            android:id="@+id/action_UpdateFragment_to_UpdateValuesFragment"
+            app:destination="@id/UpdateValuesFragment" />
+        <argument
+            android:name="beacon1_id"
+            app:argType="integer" />
+        <argument
+            android:name="beacon2_id"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UpdateValuesFragment"
+        android:name="com.katiekilroy.myapplication.UpdateValuesFragment"
+        android:label="@string/update_beacon_fragment"
+        tools:layout="@layout/fragment_update_values">
+        <action
+            android:id="@+id/action_UpdateValuesFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity22"
+        android:name="com.katiekilroy.myapplication.MainActivity2"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <action
+        android:id="@+id/action_main_to_nav_gallery"
+        app:destination="@id/nav_gallery" />
+    <fragment
+        android:id="@+id/calibrationFragment"
+        android:name="com.katiekilroy.myapplication.CalibrationFragment"
+        android:label="Beacon Calibration"
+        tools:layout="@layout/fragment_calibration" >
+        <action
+            android:id="@+id/action_calibrationFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEdgeFragment"
+        android:name="com.katiekilroy.myapplication.unused.AddEdgeFragment"
+        android:label="fragment_add_edge_list"
+        tools:layout="@layout/fragment_add_edge_list" />
+</navigation>
