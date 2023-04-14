@@ -7,15 +7,12 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.katiekilroy.myapplication.ui.home.HomeFragment"
+        android:name="com.katiekilroy.myapplication.ui.user.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_nav_home_to_nav_gallery"
             app:destination="@id/nav_gallery" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_slideshow"
-            app:destination="@id/nav_navigation" />
         <action
             android:id="@+id/action_nav_home_to_ScanningFragment"
             app:destination="@id/ScanningFragment" />
@@ -23,8 +20,8 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.katiekilroy.myapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:name="com.katiekilroy.myapplication.admin.GalleryFragment"
+        android:label="Settings"
         tools:layout="@layout/fragment_gallery" >
         <action
             android:id="@+id/action_nav_gallery_to_calibrationFragment"
@@ -32,32 +29,34 @@
         <action
             android:id="@+id/action_nav_gallery_to_UpdateFragment"
             app:destination="@id/UpdateFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_beaconCheckFragment"
+            app:destination="@id/beaconCheckFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_nameChangeFragment"
+            app:destination="@id/nameChangeFragment" />
     </fragment>
 
-    <fragment
-        android:id="@+id/nav_navigation"
-        android:name="com.katiekilroy.myapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-<!--    <fragment-->
+    <!--    <fragment-->
 <!--        android:id="@+id/Settings"-->
-<!--        android:name="com.katiekilroy.myapplication.ScanningFragment"-->
+<!--        android:name="com.katiekilroy.myapplication.ui.user.ScanningFragment"-->
 <!--        android:label="setting_activity"-->
 <!--        tools:layout="@layout/fragment_scanning"/>-->
 
 <!--    <fragment-->
 <!--        android:id="@+id/CalibrationFragment"-->
-<!--        android:name="com.katiekilroy.myapplication.CalibrationFragment"-->
+<!--        android:name="com.katiekilroy.myapplication.ui.admin.CalibrationFragment"-->
 <!--        android:label="@string/calibration_fragment_label"-->
 <!--        tools:layout="@layout/fragment_calibration"/>-->
     <fragment
         android:id="@+id/ScanningFragment"
-        android:name="com.katiekilroy.myapplication.ScanningFragment"
+        android:name="com.katiekilroy.myapplication.ui.user.ScanningFragment"
         android:label="@string/scanning_fragment"
-        tools:layout="@layout/fragment_scanning"/>
+        tools:layout="@layout/fragment_scanning">
+    </fragment>
     <fragment
         android:id="@+id/UpdateFragment"
-        android:name="com.katiekilroy.myapplication.UpdateBeaconFragment"
+        android:name="com.katiekilroy.myapplication.admin.UpdateBeaconFragment"
         android:label="Update Path"
         tools:layout="@layout/fragment_update">
         <action
@@ -73,7 +72,7 @@
 
     <fragment
         android:id="@+id/UpdateValuesFragment"
-        android:name="com.katiekilroy.myapplication.UpdateValuesFragment"
+        android:name="com.katiekilroy.myapplication.admin.UpdateValuesFragment"
         android:label="@string/update_beacon_fragment"
         tools:layout="@layout/fragment_update_values">
         <action
@@ -82,7 +81,7 @@
     </fragment>
     <activity
         android:id="@+id/mainActivity22"
-        android:name="com.katiekilroy.myapplication.MainActivity2"
+        android:name="com.katiekilroy.myapplication.MainActivity"
         android:label="app_bar_main"
         tools:layout="@layout/app_bar_main" />
     <action
@@ -90,7 +89,7 @@
         app:destination="@id/nav_gallery" />
     <fragment
         android:id="@+id/calibrationFragment"
-        android:name="com.katiekilroy.myapplication.CalibrationFragment"
+        android:name="com.katiekilroy.myapplication.admin.CalibrationFragment"
         android:label="Beacon Calibration"
         tools:layout="@layout/fragment_calibration" >
         <action
@@ -98,8 +97,16 @@
             app:destination="@id/nav_gallery" />
     </fragment>
     <fragment
-        android:id="@+id/addEdgeFragment"
-        android:name="com.katiekilroy.myapplication.unused.AddEdgeFragment"
-        android:label="fragment_add_edge_list"
-        tools:layout="@layout/fragment_add_edge_list" />
+        android:id="@+id/beaconCheckFragment"
+        android:name="com.katiekilroy.myapplication.admin.BeaconCheckFragment"
+        android:label="Beacon Check"
+        tools:layout="@layout/fragment_beacon_check" />
+    <fragment
+        android:id="@+id/nameChangeFragment"
+        android:name="com.katiekilroy.myapplication.admin.NameChangeFragment"
+        android:label="Beacon Name Change" >
+        <action
+            android:id="@+id/action_nameChangeFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
 </navigation>

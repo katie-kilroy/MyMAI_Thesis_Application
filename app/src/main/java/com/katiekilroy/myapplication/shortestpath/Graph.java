@@ -4,7 +4,6 @@ import android.util.Log;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,10 +14,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 public class Graph {
-
-  String jsonData = "your JSON data";
-  Gson gson = new Gson();
-//  Map<String, Object> map = gson.fromJson(jsonData, new TypeToken<Map<String, Object>>(){}.getType());
 
   FirebaseDatabase database = FirebaseDatabase.getInstance();
   DatabaseReference db = database.getReference("Map");

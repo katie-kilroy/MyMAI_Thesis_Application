@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    namespace 'com.katiekilroy.maitestapplication'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.katiekilroy.maitestapplication"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.material:material:1.9.0-alpha01'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.room:room-rxjava2:2.5.0'
+    implementation 'com.google.android.gms:play-services-measurement-api:21.2.0'
+    implementation 'com.google.android.gms:play-services-dtdi:16.0.0-beta01'
+    testImplementation 'junit:junit:4.13.2'
+
+
+
+    // Dagger 2
+    implementation 'com.google.dagger:dagger:2.35.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.3'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.2'
+    implementation "com.google.dagger:dagger-android:2.35.1"
+    implementation "com.google.dagger:dagger-android-support:2.x"
+    kapt "com.google.dagger:dagger-android-processor:2.x"
+    kapt 'com.google.dagger:dagger-compiler:2.22.1'
+
+    // ALT Beacon library
+    implementation 'org.altbeacon:android-beacon-library:2.19'
+
+    // Material dialog
+    implementation 'com.afollestad.material-dialogs:core:3.1.1'
+    implementation 'com.afollestad.material-dialogs:input:3.1.1'
+
+    // Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Tap target view, discovery feature
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.11.0'
+
+    // Retrofit & RxJava call adapters & Gson
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    // RxJava & RxAndroid
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.0.0'
+
+    // javax
+    implementation 'javax.inject:javax.inject:1'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+repositories {
+    jcenter()
+    maven { url "https://dl.bintray.com/drummer-aidan/maven/" }
+}
