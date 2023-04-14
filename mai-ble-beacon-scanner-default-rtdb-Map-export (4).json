@@ -1,0 +1,118 @@
+[
+  null,
+  {
+    "Edges": {
+      "2": {
+        "description": "up the ramp",
+        "direction": 2,
+        "weight": 3
+      }
+    },
+    "Name": "Stairs"
+  },
+  {
+    "Edges": {
+      "1": {
+        "description": "at the end of the ramp",
+        "direction": -2,
+        "weight": 6
+      },
+      "3": {
+        "description": "through the blue door",
+        "direction": 1,
+        "weight": 3
+      },
+      "9": {
+        "description": "go through door for Basement Lab",
+        "direction": 2,
+        "weight": 8
+      }
+    },
+    "Name": "Workshop"
+  },
+  {
+    "Edges": {
+      "2": {
+        "description": "through the blue door",
+        "direction": -1,
+        "weight": 6
+      },
+      "4": {
+        "description": "past the shelves",
+        "direction": 2,
+        "weight": 3
+      }
+    },
+    "Name": "Storage Room"
+  },
+  {
+    "Edges": {
+      "3": {
+        "description": "pass the shelves",
+        "direction": -2,
+        "weight": 3
+      },
+      "5": {
+        "description": "through the white door",
+        "direction": -2,
+        "weight": 3
+      }
+    },
+    "Name": "Room 0.07"
+  },
+  {
+    "Edges": {
+      "4": {
+        "description": "through the white door",
+        "direction": 2,
+        "weight": 3
+      },
+      "6": {
+        "description": "through the blue door at the end of the hallway",
+        "direction": 1,
+        "weight": 9
+      }
+    },
+    "Name": "Back Exit"
+  },
+  {
+    "Edges": {
+      "5": {
+        "description": "until the end of the hallway",
+        "direction": -1,
+        "weight": 9
+      },
+      "7": {
+        "description": "and go through the blue door on the opposite side of the room",
+        "direction": -2,
+        "weight": 6
+      }
+    },
+    "Name": "Microscope Lab"
+  },
+  {
+    "Edges": {
+      "6": {
+        "description": "at the hand sanitiser",
+        "direction": 2,
+        "weight": 6
+      },
+      "8": {
+        "description": "through the blue door across the room from you",
+        "direction": 1,
+        "weight": 6
+      }
+    },
+    "Name": "3D Printing Lab"
+  },
+  {
+    "Edges": {
+      "7": {
+        "description": "through the blue door across the room from you",
+        "direction": -1,
+        "weight": 6
+      }
+    },
+    "Name": "Testing Hall"
+  }
+]
